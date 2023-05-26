@@ -1,0 +1,21 @@
+---
+import styles from '../styles/Navbar.module.css';
+
+interface Props {
+    title: string,
+    logo: string,
+    searchExample: string
+}
+
+const { title, logo, searchExample } = Astro.props;
+---
+<nav class={styles.Navbar}>
+    <a class={styles.home} href='/'>
+        <img src={logo} alt="Logo..." class={styles.logo}>
+        <span class={styles.title}>{title}</span>
+    </a>
+    <form class={styles.search} action='/search' method="GET">
+        <input type="text" placeholder={searchExample} class={styles.search_input} name='q'>
+        <button type="submit" class={styles.search_button}><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</nav>

@@ -1,0 +1,57 @@
+:root {
+    --nav-height: 65px;
+}
+
+.Navbar {
+    width: 100vw;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: var(--nav-height);
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    height: calc(var(--nav-height) - var(--margin) * 2);
+    margin-left: var(--margin);
+}
+
+.title {
+    font-weight: bold;
+    margin-left: var(--margin);
+}
+
+.search {
+    position: absolute;
+    right: var(--margin);
+    border: 2px solid #000;
+    border-radius: var(--margin);
+    height: calc(var(--nav-height) - 20px);
+    cursor: text;
+    width: 25%;
+}
+
+.search_button {
+    background: none;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.search_input {
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 80%;
+}

@@ -1,0 +1,7 @@
+:root {
+    --margin: 6px;
+}
+
+*, body, main, html {
+    margin: 0;
+}
