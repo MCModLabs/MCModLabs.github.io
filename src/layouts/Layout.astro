@@ -1,8 +1,11 @@
 ---
+import Navbar from '../components/Navbar.astro';
+
 import '../styles/index.css';
+import logo from '/logo.svg';
 
 export interface Props {
-	title: string;
+	title: string
 }
 
 const { title } = Astro.props;
@@ -22,6 +25,7 @@ const { title } = Astro.props;
 		<script src="https://kit.fontawesome.com/27cb2c9c67.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<Navbar title="MCModLabs" logo={logo} searchExample="Create Fabric..." />
 		<slot />
 	</body>
 </html>

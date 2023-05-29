@@ -1,15 +1,18 @@
 {
-  "name": "",
+  "name": "mcmodlabs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.4.1"
+    "@astrojs/solid-js": "^2.2.0",
+    "astro": "^2.5.5",
+    "axios": "^1.4.0",
+    "md-block": "^0.0.1",
+    "solid-js": "^1.7.5"
   }
 }

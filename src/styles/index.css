@@ -4,4 +4,9 @@
 
 *, body, main, html {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: var(--nav-height);
 }

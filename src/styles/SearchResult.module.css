@@ -1,0 +1,25 @@
+.result {
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+    width: 675px;
+    font-size: 125%;
+}
+
+.logo {
+    height: 150px;
+    border-radius: var(--margin);
+}
+
+.content {
+    margin-left: var(--margin);
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: var(--margin);
+    font-size: 125%;
+}

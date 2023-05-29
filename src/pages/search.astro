@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SearchResults } from '../components/SearchResults';
+---
+<Layout title="MCModLabs - Search">
+    <main>
+        {/* <SearchResult logo='https://raw.githubusercontent.com/Fabricators-of-Create/Create/mc1.18/fabric/dev/src/main/resources/logo.png' title="Create" description="[Fabric Mod] Building Tools and Aesthetic Technology" id='Fabricators-of-Create/Create' /> */}
+        <SearchResults maxResults={32} client:only />
+    </main>
+</Layout>
+<script>
+    const params = Object.fromEntries(new URLSearchParams(window.location.search));
+
+    const search_elem = document.querySelector('nav > form > input') as HTMLInputElement;
+    search_elem.value = params.q;
+</script>
