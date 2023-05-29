@@ -4,3 +4,28 @@
     gap: var(--margin);
     margin-left: var(--margin);
 }
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--margin) * 3);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.nav_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav_btn_text_next {
+    margin-right: var(--margin);
+}
+
+.nav_btn_text_pre {
+    margin-left: var(--margin);
+}

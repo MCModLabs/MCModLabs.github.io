@@ -14,8 +14,9 @@ const { title, logo, searchExample } = Astro.props;
         <img src={logo} alt="Logo..." class={styles.logo}>
         <span class={styles.title}>{title}</span>
     </a>
-    <form class={styles.search} action='/search' method="GET" autocomplete="off">
+    <form class={styles.search} action='/search?p=1&' method="GET" autocomplete="off">
         <input type="text" placeholder={searchExample} class={styles.search_input} name='q'>
         <button type="submit" class={styles.search_button}><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" name='p' value='1' class='hidden'>
     </form>
 </nav>

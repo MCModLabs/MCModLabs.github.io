@@ -1,9 +1,16 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@astrojs/solid-js':
     specifier: ^2.2.0
     version: 2.2.0(@babel/core@7.22.1)(solid-js@1.7.5)
+  '@fortawesome/free-solid-svg-icons':
+    specifier: ^6.4.0
+    version: 6.4.0
   astro:
     specifier: ^2.5.5
     version: 2.5.5
@@ -13,6 +20,9 @@ dependencies:
   md-block:
     specifier: ^0.0.1
     version: 0.0.1
+  solid-fa:
+    specifier: ^0.2.0
+    version: 0.2.0(solid-js@1.7.5)
   solid-js:
     specifier: ^1.7.5
     version: 1.7.5
@@ -567,6 +577,20 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fortawesome/fontawesome-common-types@6.4.0:
+    resolution: {integrity: sha512-HNii132xfomg5QVZw0HwXXpN22s7VBHQBv9CeOu9tfJnhsWQNd2lmTNi8CSrnw5B+5YOmzu1UoPAyxaXsJ6RgQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons@6.4.0:
+    resolution: {integrity: sha512-kutPeRGWm8V5dltFP1zGjQOEAzaLZj4StdQhWVZnfGFCvAPVvHh8qk5bRrU4KXnRRRNni5tKQI9PBAdI6MP8nQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.4.0
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -2760,6 +2784,14 @@ packages:
   /slash@4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+    dev: false
+
+  /solid-fa@0.2.0(solid-js@1.7.5):
+    resolution: {integrity: sha512-Mi8aOKZ+GJ2VgchwlV3SVrQPwpcDh1kuXdMCbQ0AlxBI9W36FaxTMOUrZenU6Ua/p04EcRfHLT4AfOx7xJSF3Q==}
+    peerDependencies:
+      solid-js: ^1.0.0
+    dependencies:
+      solid-js: 1.7.5
     dev: false
 
   /solid-js@1.7.5:

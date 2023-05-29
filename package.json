@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@astrojs/solid-js": "^2.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "astro": "^2.5.5",
     "axios": "^1.4.0",
     "md-block": "^0.0.1",
+    "solid-fa": "^0.2.0",
     "solid-js": "^1.7.5"
   }
 }
