@@ -5,7 +5,7 @@
     color: #000;
     text-decoration: none;
     align-items: center;
-    width: 675px;
+    max-width: 675px;
     font-size: 125%;
 }
 

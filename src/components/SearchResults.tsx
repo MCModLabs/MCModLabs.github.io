@@ -71,7 +71,7 @@ export const SearchResults = ({ maxResults }: { maxResults: number }) => {
                             <Fa icon={faChevronLeft} scale={2} />
                             <h3 class={styles.nav_btn_text_pre}>Previous</h3>
                         </button>
-                        <h3 class={styles.nav_page}>{params.p}</h3>
+                        <h4 class={styles.nav_page}>{params.p}</h4>
                         <button class={styles.nav_btn} onClick={() => setParam('p', Number(params.p) + 1)}>
                             <h4 class={styles.nav_btn_text_next}>Next</h4>
                             <Fa icon={faChevronRight} scale={2} />
